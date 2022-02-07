@@ -1,0 +1,13 @@
+GENERAL:
+  # required
+  data_path: ~
+  simu_path: ~
+  dt: 5e-3
+  n: 100
+
+
+PHYSICS:
+  density: 0
+  material:
+    mat_name: MooneyRivlin
+    mat: [1e5, 1e5, 80e5]

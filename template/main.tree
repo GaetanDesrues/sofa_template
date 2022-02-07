@@ -1,0 +1,9 @@
+.
+	. data
+		- mesh_tetra: mesh.vtk
+		- mesh_visu: mesh.obj
+	. simu
+		- params.yaml
+		. export
+			- path_export: simu.vtk
+			- path_exported: simu_{}.vtk
