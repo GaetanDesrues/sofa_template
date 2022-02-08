@@ -190,6 +190,7 @@ class Model:
         cb_begin: Callable = None,
         cb_end: Callable = None,
         title: str = tf.get_timestamp(),
+        plugins=None,
     ):
         assert (
             "SOFA_ROOT" in os.environ
@@ -198,7 +199,7 @@ class Model:
         tf.dump_yaml(self.params.simu_tree.params, self.params.to_yaml())
 
         if self.root is None:
-            self.init_scene()
+            self.init_scene(plugins=plugins)
 
         if gui:
             GUIManager.Init("")
